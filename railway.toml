@@ -1,8 +1,11 @@
 [build]
 builder = "NIXPACKS"
 
+[build.nixpacksConfig]
+installCommand = "npm install"
+buildCommand = "npm run build"
+
 [deploy]
-startCommand = "npm run build"
 staticPublishPath = "dist"
 
 [variables]
