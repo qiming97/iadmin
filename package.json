@@ -1,0 +1,41 @@
+{
+  "name": "interview-admin",
+  "version": "1.0.0",
+  "description": "Interview System Admin Panel",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0",
+    "antd": "^5.12.0",
+    "@ant-design/icons": "^5.2.0",
+    "axios": "^1.6.0",
+    "dayjs": "^1.11.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0",
+    "@vitejs/plugin-react": "^4.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port $PORT",
+    "type-check": "tsc --noEmit"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
