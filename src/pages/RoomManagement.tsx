@@ -209,13 +209,26 @@ const RoomManagement: React.FC = () => {
       title: '房间名称',
       dataIndex: 'name',
       key: 'name',
-      width: 150,
+      width: 200,
       fixed: 'left' as const,
+      ellipsis: {
+        showTitle: false,
+      },
       render: (text: string) => (
-        <Space>
-          <CodeOutlined />
-          <span style={{ whiteSpace: 'nowrap' }}>{text}</span>
-        </Space>
+        <Tooltip placement="topLeft" title={text}>
+          <Space>
+            <CodeOutlined />
+            <span style={{ 
+              display: 'inline-block',
+              maxWidth: '150px',
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis'
+            }}>
+              {text}
+            </span>
+          </Space>
+        </Tooltip>
       ),
     },
     {
